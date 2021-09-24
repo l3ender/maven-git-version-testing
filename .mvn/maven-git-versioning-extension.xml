@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration
+	xmlns="https://github.com/qoomon/maven-git-versioning-extension"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://github.com/qoomon/maven-git-versioning-extension https://qoomon.github.io/maven-git-versioning-extension/configuration-7.0.0.xsd">
+
+	<refs>
+		<ref type="branch">
+			<pattern>.*</pattern>
+			<version>${version.release}-SNAPSHOT</version>
+		</ref>
+
+		<ref type="tag">
+			<pattern>([0-9]+[.]?)+</pattern>
+			<version>${version.release}</version>
+		</ref>
+	</refs>
+
+	<rev>
+		<version>${commit}</version>
+	</rev>
+
+</configuration>
