@@ -7,7 +7,8 @@
 	<refs>
 		<ref type="tag">
 			<pattern>([0-9]+[.]?)+</pattern>
-			<version>${version.release}</version>
+			<version>${ref}</version>
+			<updatePom>true</updatePom>
 		</ref>
 
 		<ref type="branch">
