@@ -5,14 +5,14 @@
 	xsi:schemaLocation="https://github.com/qoomon/maven-git-versioning-extension https://qoomon.github.io/maven-git-versioning-extension/configuration-7.0.0.xsd">
 
 	<refs>
-		<ref type="branch">
-			<pattern>.*</pattern>
-			<version>${version.release}-SNAPSHOT</version>
-		</ref>
-
 		<ref type="tag">
 			<pattern>([0-9]+[.]?)+</pattern>
 			<version>${version.release}</version>
+		</ref>
+
+		<ref type="branch">
+			<pattern>.*</pattern>
+			<version>${version.release}-SNAPSHOT</version>
 		</ref>
 	</refs>
 
